@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="fixed inset-0 -z-20">
         <Image
-          src="/images/home/Banner1.jpg" 
+          src="/images/home/Banner1.jpg"
           alt="School Banner"
           layout="fill"
           objectFit="cover"
@@ -19,17 +19,18 @@ const HeroSection = () => {
       <div className="absolute bg-black/30 w-full h-full flex justify-center items-center z-0">
         <div className=" max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-bold">
-            Better <span className="text-yellow-400">education</span> for <br /> an Amazing world.
+            Better <span className="text-yellow-400">education</span> for <br />{" "}
+            an Amazing world.
           </h1>
-          <Button 
-          variant="outline" 
-          className="mt-10 uppercase border bg-transparent px-20 rounded-full py-6 text-white font-semibold
-           hover:bg-orange-600 hover:border-orange-600 transition-all duration-500 hover:text-white">
+          <Button
+            variant="outline"
+            className="mt-10 uppercase border bg-transparent px-20 rounded-full py-6 text-white font-semibold
+           hover:bg-orange-600 hover:border-orange-600 transition-all duration-500 hover:text-white"
+          >
             Visit Campus
           </Button>
         </div>
       </div>
-
     </section>
   );
 };

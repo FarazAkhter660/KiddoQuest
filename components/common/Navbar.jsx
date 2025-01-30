@@ -149,12 +149,6 @@
 
 // export default Navbar;
 
-
-
-
-
-
-
 "use client";
 
 import Link from "next/link";
@@ -167,17 +161,27 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-2xl font-bold">
           <Link href="/">
-          <img src="/images/LOGO.png"  className="w-20"/>
+            <img src="/images/LOGO.png" className="w-20" />
           </Link>
         </div>
 
         {/* Navigation */}
         <nav className="hidden md:flex space-x-6">
-          <Link href="/" className="hover:text-yellow-400">Home</Link>
-          <Link href="/courses" className="hover:text-yellow-400">Courses</Link>
-          <Link href="/events" className="hover:text-yellow-400">Events</Link>
-          <Link href="/blog" className="hover:text-yellow-400">Blog</Link>
-          <Link href="/contact" className="hover:text-yellow-400">Contact</Link>
+          <Link href="/" className="hover:text-yellow-400">
+            Home
+          </Link>
+          <Link href="/courses" className="hover:text-yellow-400">
+            Courses
+          </Link>
+          <Link href="/events" className="hover:text-yellow-400">
+            Events
+          </Link>
+          <Link href="/blog" className="hover:text-yellow-400">
+            Blog
+          </Link>
+          <Link href="/contact" className="hover:text-yellow-400">
+            Contact
+          </Link>
         </nav>
 
         {/* Call to Action */}

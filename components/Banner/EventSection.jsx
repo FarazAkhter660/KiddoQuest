@@ -23,25 +23,26 @@ export const eventData = {
   ],
 };
 
-
 const EventImage = ({ image, videoLink }) => {
   return (
     <div className="relative w-full border md:w-[40%] mr-6">
       <Image src={image} alt="Event Image" layout="fill" className="" />
 
       <div className="absolute bottom-0 h-1/2 bg-black/70 w-full flex flex-col justify-center items-center">
-        <a href={videoLink} className="absolute -top-10 bg-yellow-500 p-8 flex items-center justify-center rounded-full">
+        <a
+          href={videoLink}
+          className="absolute -top-10 bg-yellow-500 p-8 flex items-center justify-center rounded-full"
+        >
           <Play size={20} className="text-white " />
         </a>
-        <p className="text-center mt-2 text-base text-white font-semibold uppercase">TAKE A TOUR IN EDUMA SCHOOL</p>
+        <p className="text-center mt-2 text-base text-white font-semibold uppercase">
+          TAKE A TOUR IN EDUMA SCHOOL
+        </p>
         <p className="text-sm text-gray-300">Making your achivement</p>
       </div>
     </div>
   );
 };
-
-
-
 
 const EventDetails = ({ title, description, date, time, location }) => {
   return (
@@ -50,15 +51,19 @@ const EventDetails = ({ title, description, date, time, location }) => {
       <p className="mt-4 text-lg text-gray-700">{description}</p>
 
       <div className="mt-4 space-y-2 text-gray-700">
-        <p className="flex items-center gap-2"><Calendar className="text-yellow-500" /> {date}</p>
-        <p className="flex items-center gap-2"><Clock className="text-yellow-500" /> {time}</p>
-        <p className="flex items-center gap-2"><MapPin className="text-yellow-500" /> {location}</p>
+        <p className="flex items-center gap-2">
+          <Calendar className="text-yellow-500" /> {date}
+        </p>
+        <p className="flex items-center gap-2">
+          <Clock className="text-yellow-500" /> {time}
+        </p>
+        <p className="flex items-center gap-2">
+          <MapPin className="text-yellow-500" /> {location}
+        </p>
       </div>
     </div>
   );
 };
-
-
 
 const WhyChooseUs = ({ items }) => {
   return (
@@ -67,7 +72,10 @@ const WhyChooseUs = ({ items }) => {
       <ul className="mt-4 space-y-4 text-gray-700">
         {items.map((item, index) => (
           <li key={index} className="flex items-center gap-2">
-            <span className="text-yellow-500"><SquareCheckBigIcon size={20} /></span> {item}
+            <span className="text-yellow-500">
+              <SquareCheckBigIcon size={20} />
+            </span>{" "}
+            {item}
           </li>
         ))}
       </ul>
@@ -102,4 +110,3 @@ const EventSection = () => {
 };
 
 export default EventSection;
-
