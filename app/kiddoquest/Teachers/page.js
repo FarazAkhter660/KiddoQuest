@@ -14,7 +14,6 @@ const KiddoQuestPage = () => {
           <Home />
         </div>
         <PopularTeachers />
-        <PopularTeachers />
         <Footer />
       </div>
     </React.Fragment>
