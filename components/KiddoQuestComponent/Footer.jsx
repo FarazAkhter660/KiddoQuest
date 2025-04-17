@@ -188,7 +188,7 @@ export default function Footer() {
             href="https://htmlcodex.com"
             className="text-white group hover:underline hover:text-orange-500 transition"
           >
-            ExamAtlas
+            Faraz Akhter
           </a>
         </p>
         <div>
