@@ -4,7 +4,6 @@ const AboutSection = () => {
   return (
     <div className="bg-white min-h-screen px-6 sm:px-1 py-2 flex justify-center items-center">
       <div className="flex flex-col md:flex-row max-w-7xl w-full gap-8 items-center">
-        {/* Left Section - Text */}
         <div className="flex-1 text-center md:text-left">
           <h2
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800"
@@ -41,7 +40,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Right Section - Images */}
         <div className="flex-1 flex flex-col items-center gap-6 justify-center mt-8 md:mt-0 relative">
           <div className="relative w-96 h-96 sm:w-[28rem] sm:h-[28rem] rounded-full bg-pink-100 shadow-md group">
             <Image

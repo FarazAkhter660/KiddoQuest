@@ -1,14 +1,19 @@
 "use client";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBusAlt, faFutbol, faHome, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBusAlt,
+  faFutbol,
+  faHome,
+  faChalkboardTeacher,
+} from "@fortawesome/free-solid-svg-icons";
 
 const facilities = [
   {
-   title: "School Bus",
+    title: "School Bus",
     description:
       "Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit",
-      icon: <FontAwesomeIcon icon={faBusAlt} className="fa-2x text-success" />,
-      bgColor: "#FEE2E2",
+    icon: <FontAwesomeIcon icon={faBusAlt} className="fa-2x text-success" />,
+    bgColor: "#FEE2E2",
     hoverBgColor: "#EF4444",
     textColor: "#DC2626",
   },
@@ -34,7 +39,9 @@ const facilities = [
     title: "Positive Learning",
     description:
       "Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit",
-    icon: <FontAwesomeIcon icon={faChalkboardTeacher} className="fa-2x text-info" />,
+    icon: (
+      <FontAwesomeIcon icon={faChalkboardTeacher} className="fa-2x text-info" />
+    ),
     bgColor: "#DBEAFE",
     hoverBgColor: "#3B82F6",
     textColor: "#1D4ED8",
@@ -59,7 +66,7 @@ const SchoolFacilities = () => {
             fontWeight: "bold",
             color: "#1F2937",
             marginBottom: "24px",
-            fontFamily: "'Lobster Two', cursive"
+            fontFamily: "'Lobster Two', cursive",
           }}
         >
           School Facilities
