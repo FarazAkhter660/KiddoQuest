@@ -37,7 +37,7 @@ const FullScreenCarousel = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      
+
       <div
         className="absolute bottom-[0px] left-0 w-full h-[10px] bg-repeat-x z-10"
         style={{
